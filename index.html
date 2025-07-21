@@ -29,20 +29,31 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .hero img {
-      width: 100%;
-      height: auto;
-      display: block;
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      height: 400px;
+      background: url('CarCun banner.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .hero-text {
+      position: absolute;
       text-align: center;
-      margin: -60px auto 2rem auto;
       color: white;
-      background-color: rgba(0, 34, 68, 0.75);
-      padding: 1rem;
-      border-radius: 8px;
-      width: fit-content;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+
+    /* SERVICE TILES */
     .tiles {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -61,6 +72,8 @@
     .tile:hover {
       transform: scale(1.02);
     }
+
+    /* INVENTORY SECTION */
     .inventory {
       padding: 2rem;
     }
@@ -84,6 +97,8 @@
     .car-details {
       padding: 1rem;
     }
+
+    /* CONTACT SECTION */
     .contact {
       padding: 2rem;
       background-color: #f0f6ff;
@@ -113,6 +128,8 @@
       border-radius: 4px;
       cursor: pointer;
     }
+
+    /* FOOTER */
     footer {
       background-color: #002244;
       color: white;
@@ -134,7 +151,6 @@
   </header>
 
   <section class="hero">
-    <img src="CarCun banner.jpg" alt="CarCun Banner" />
     <div class="hero-text">
       <h1>Welcome to CarCun</h1>
       <p>Reliable Cars · Quality Service · Fort Worth, TX</p>
@@ -184,4 +200,3 @@
 
 </body>
 </html>
-
