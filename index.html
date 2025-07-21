@@ -29,23 +29,19 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .hero {
-      background: url('CarCun banner.jpg') center/cover no-repeat;
-      height: 400px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero-text {
       text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0.5rem 0;
-    }
-    .hero p {
-      font-size: 1.2rem;
+      margin: -60px auto 2rem auto;
+      color: white;
+      background-color: rgba(0, 34, 68, 0.7);
+      padding: 1rem;
+      border-radius: 8px;
+      width: fit-content;
     }
     .tiles {
       display: grid;
@@ -138,8 +134,11 @@
   </header>
 
   <section class="hero">
-    <h1>Welcome to CarCun</h1>
-    <p>Where Reliability Meets Style · Fort Worth, TX</p>
+    <img src="CarCun banner.jpg" alt="CarCun Banner" />
+    <div class="hero-text">
+      <h1>Welcome to CarCun</h1>
+      <p>Reliable Cars · Quality Service · Fort Worth, TX</p>
+    </div>
   </section>
 
   <section class="tiles" id="services">
