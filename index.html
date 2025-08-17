@@ -7,7 +7,6 @@
   <link rel="icon" href="Carcun web icon 32x32.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
-    /* Base styles */
     * {
       margin: 0;
       padding: 0;
@@ -94,16 +93,21 @@
     }
 
     .tile {
-      background-color: #f4f8ff;
-      border: 1px solid #ccddee;
+      background-color: #0077cc;
+      color: white;
+      border: none;
       border-radius: 8px;
       padding: 1.5rem;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, transform 0.2s;
     }
 
     .tile:hover {
-      transform: scale(1.02);
+      background-color: #005fa3;
+      transform: scale(1.03);
     }
 
     .inventory {
@@ -161,6 +165,10 @@
       cursor: pointer;
     }
 
+    .car-details button:hover {
+      background-color: #005fa3;
+    }
+
     .contact {
       padding: 2rem;
       background-color: #f0f6ff;
@@ -207,7 +215,6 @@
       margin-top: 2rem;
     }
 
-    /* Responsive styles */
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -245,10 +252,10 @@
   </section>
 
   <section class="tiles" id="services">
-    <div class="tile">🚘 Buy a Car</div>
-    <div class="tile">💰 Sell Your Car</div>
-    <div class="tile">🔧 Schedule Service</div>
-    <div class="tile">📍 Get Directions</div>
+    <button class="tile">🚘 Buy a Car</button>
+    <button class="tile">💰 Sell Your Car</button>
+    <button class="tile">🔧 Schedule Service</button>
+    <button class="tile">📍 Get Directions</button>
   </section>
 
   <section class="inventory" id="inventory">
@@ -286,17 +293,4 @@
     <h2>Contact Us</h2>
     <form class="contact-form">
       <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    &copy; 2025 CarCun · Fort Worth, Texas · All rights reserved.
-  </footer>
-
-</body>
-</html>
-
- 
+      <input
